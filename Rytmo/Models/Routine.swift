@@ -1,27 +1,21 @@
 import Foundation
 
-struct Routine: Identifiable {  // Make it conform to Identifiable
-    let id = UUID()
-    let name: String
-    let segments: [RoutineSegment]
-}
+struct Routine: Identifiable, Hashable, Comparable {
+    var id = UUID()
+    var name: String
+    var duration: TimeInterval
 
-struct RoutineSegment {
-    let duration: TimeInterval  // Duration in seconds
-    let segmentType: SegmentType
-}
+    // Hashable protokolüne uyması için gerekli
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
 
-enum SegmentType {
-    case work, rest
-}
+    static func == (lhs: Routine, rhs: Routine) -> Bool {
+        return lhs.id == rhs.id
+    }
 
-
-extension Routine {
-    static let sampleRoutines: [Routine] = [
-        Routine(name: "Quick Focus", segments: [
-            RoutineSegment(duration: 1500, segmentType: .work), // 25 minutes
-            RoutineSegment(duration: 300, segmentType: .rest)  // 5 minutes
-        ]),
-        // ... Add 1-2 more sample routines if you like
-    ]
+    // Comparable protokolüne uyması için gerekli
+    static func < (lhs: Routine, rhs: Routine) -> Bool {
+        return lhs.name < rhs.name
+    }
 }

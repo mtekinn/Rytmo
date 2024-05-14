@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E109005C2BF38EBD00CDB67F /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E109005B2BF38EBD00CDB67F /* StatisticsView.swift */; };
+		E109005E2BF38EDC00CDB67F /* RoutineDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E109005D2BF38EDC00CDB67F /* RoutineDetailView.swift */; };
+		E10900622BF38F8600CDB67F /* AddRoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10900612BF38F8600CDB67F /* AddRoutineView.swift */; };
+		E10900642BF3901500CDB67F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10900632BF3901500CDB67F /* ProfileView.swift */; };
 		E1D53C6E2BDA6C28000EF437 /* RytmoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D53C6D2BDA6C28000EF437 /* RytmoApp.swift */; };
 		E1D53C702BDA6C28000EF437 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D53C6F2BDA6C28000EF437 /* ContentView.swift */; };
 		E1D53C722BDA6C29000EF437 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1D53C712BDA6C29000EF437 /* Assets.xcassets */; };
@@ -16,9 +20,14 @@
 		E1D53C822BDA6C77000EF437 /* RoutinesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D53C812BDA6C77000EF437 /* RoutinesListView.swift */; };
 		E1D53C852BDA6C99000EF437 /* MainTimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D53C842BDA6C99000EF437 /* MainTimerViewModel.swift */; };
 		E1D53C872BDA6CA1000EF437 /* RoutinesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D53C862BDA6CA1000EF437 /* RoutinesListViewModel.swift */; };
+		E1D53C892BDAF3FD000EF437 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D53C882BDAF3FD000EF437 /* CircularProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E109005B2BF38EBD00CDB67F /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		E109005D2BF38EDC00CDB67F /* RoutineDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDetailView.swift; sourceTree = "<group>"; };
+		E10900612BF38F8600CDB67F /* AddRoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRoutineView.swift; sourceTree = "<group>"; };
+		E10900632BF3901500CDB67F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		E1D53C6A2BDA6C28000EF437 /* Rytmo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rytmo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D53C6D2BDA6C28000EF437 /* RytmoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RytmoApp.swift; sourceTree = "<group>"; };
 		E1D53C6F2BDA6C28000EF437 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -29,6 +38,7 @@
 		E1D53C812BDA6C77000EF437 /* RoutinesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinesListView.swift; sourceTree = "<group>"; };
 		E1D53C842BDA6C99000EF437 /* MainTimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTimerViewModel.swift; sourceTree = "<group>"; };
 		E1D53C862BDA6CA1000EF437 /* RoutinesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinesListViewModel.swift; sourceTree = "<group>"; };
+		E1D53C882BDAF3FD000EF437 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +103,11 @@
 			children = (
 				E1D53C7F2BDA6C70000EF437 /* MainTimerView.swift */,
 				E1D53C812BDA6C77000EF437 /* RoutinesListView.swift */,
+				E1D53C882BDAF3FD000EF437 /* CircularProgressView.swift */,
+				E109005B2BF38EBD00CDB67F /* StatisticsView.swift */,
+				E109005D2BF38EDC00CDB67F /* RoutineDetailView.swift */,
+				E10900612BF38F8600CDB67F /* AddRoutineView.swift */,
+				E10900632BF3901500CDB67F /* ProfileView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,7 +193,12 @@
 			files = (
 				E1D53C702BDA6C28000EF437 /* ContentView.swift in Sources */,
 				E1D53C872BDA6CA1000EF437 /* RoutinesListViewModel.swift in Sources */,
+				E109005E2BF38EDC00CDB67F /* RoutineDetailView.swift in Sources */,
+				E1D53C892BDAF3FD000EF437 /* CircularProgressView.swift in Sources */,
+				E10900642BF3901500CDB67F /* ProfileView.swift in Sources */,
 				E1D53C822BDA6C77000EF437 /* RoutinesListView.swift in Sources */,
+				E10900622BF38F8600CDB67F /* AddRoutineView.swift in Sources */,
+				E109005C2BF38EBD00CDB67F /* StatisticsView.swift in Sources */,
 				E1D53C6E2BDA6C28000EF437 /* RytmoApp.swift in Sources */,
 				E1D53C7D2BDA6C59000EF437 /* Routine.swift in Sources */,
 				E1D53C802BDA6C70000EF437 /* MainTimerView.swift in Sources */,
